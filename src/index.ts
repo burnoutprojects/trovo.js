@@ -1,3 +1,4 @@
+import { AxiosError } from "axios"
 import HttpClient from "./structures/HttpClient"
 import { IChannel } from "./types/IChannel"
 
@@ -20,7 +21,9 @@ class TrovoClient extends HttpClient {
                     "Client-ID": this.#api_key
                 }
             }
-        ).then((res): IChannel => res.data)
+        )
+            .then((res): IChannel => res.data)
+            .catch((e): AxiosError | any => console.error(e.message))
     }
 }
 
