@@ -1,0 +1,42 @@
+{
+  "name": "@burnoutprojects/trovo.js",
+  "version": "0.1.0",
+  "description": "A wrapper for Trovo API, written in typescript",
+  "keywords": [
+    "trovo",
+    "api"
+  ],
+  "homepage": "https://github.com/burnoutprojects/trovo.js#readme",
+  "bugs": {
+    "url": "https://github.com/burnoutprojects/trovo.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burnoutprojects/trovo.js.git"
+  },
+  "license": "MIT",
+  "author": "Antonis Triantafyllopoulos",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "eslint src/**/*.ts --fix",
+    "lint": "eslint src/**/*.ts"
+  },
+  "husky": {
+    "hooks": {
+      "lint-staged": "npm run lint"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.46.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
