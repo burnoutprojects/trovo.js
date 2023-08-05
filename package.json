@@ -18,30 +18,34 @@
   "author": "Antonis Triantafyllopoulos",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node dist/index.js",
-    "start:dev": "npx nodemon",
     "build": "rimraf ./dist && tsc",
     "format": "eslint src/**/*.ts --fix",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "start": "npm run build && node dist/index.js",
+    "start:dev": "npx nodemon"
   },
   "husky": {
     "hooks": {
       "lint-staged": "npm run lint"
     }
   },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1"
+  },
   "devDependencies": {
-    "@types/node": "^20.4.5",
+    "@types/ms": "^0.7.31",
+    "@types/node": "^20.4.6",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.9.0",
     "husky": "^8.0.3",
+    "ms": "^2.1.3",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.0",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "axios": "^1.4.0"
   }
 }
