@@ -1,0 +1,40 @@
+{
+  "name": "trovo",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint . --fix --ext .ts",
+    "prebuild": "rimraf lib/",
+    "build": "tsc && tsc-alias",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "engineStrict": true,
+  "keywords": [],
+  "author": "Antonis Triantafyllopoulos <antonistri96@gmail.com> (https://burnoutprojects.gr/)",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node-lts": "^18.12.3",
+    "@types/node": "^20.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "axios": "^1.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.7",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.1.6"
+  }
+}

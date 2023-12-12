@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "mikestead.dotenv",
+    "dbaeumer.vscode-eslint",
+    "ldez.ignore-files",
+    "esbenp.prettier-vscode",
+    "vrej.vscplus",
+    "gruntfuggly.todo-tree"
+  ]
+}
